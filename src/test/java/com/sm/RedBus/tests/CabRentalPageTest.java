@@ -14,49 +14,49 @@ public class CabRentalPageTest extends Base {
 		hmPage.navigateToCabPage();
 	}
 
-//	@Test(priority = 1)
-//	public void crPageTitleTest() {
-//
-//		String actTitle = crPage.getCabRentalPageTitle();
-//		Assert.assertEquals(actTitle, AppConstants.CAB_RENTAL_URL_PAGE);
-//	}
-
 	@Test(priority = 1)
+	public void crPageTitleTest() {
+
+		String actTitle = crPage.getCabRentalPageTitle();
+		Assert.assertEquals(actTitle, AppConstants.CAB_RENTAL_URL_PAGE);
+	}
+
+	@Test(priority = 2)
 	public void cabRentalManagebookingTest() {
 		crPage.ismanageBookingClickable();
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 3)
 	public void profileTest() {
 		crPage.isProfileClickable();
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void outstationTest() {
 		crPage.isoutstationclickable();
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void hourlyRentalTest() {
 		crPage.isHourlyRentalClickable();
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 6)
 	public void airportTransferTest() {
 		crPage.isHourlyRentalClickable();
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void pickUpLocationTest() {
 		crPage.isPickUpboxdisplay();
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void switchiconTest() {
 		crPage.isSwitchClickable();
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void destinationTest() {
 		crPage.isDestinationboxdisplay();
 	}
@@ -66,12 +66,12 @@ public class CabRentalPageTest extends Base {
 //		crPage.isPickUpDtandTmboxdisplay();
 //	}
 
-//	@Test(priority = 9)
-//	public void roundTrip() {
-//		crPage.isRoundTripdisplay();
-//	}
+	@Test(priority = 10)
+	public void roundTrip() {
+		crPage.isRoundTripdisplay();
+	}
 
-	@Test(priority = 9)
+	@Test(priority = 11)
 	public void searchButtonTest() {
 		crPage.isSearchdisplay();
 

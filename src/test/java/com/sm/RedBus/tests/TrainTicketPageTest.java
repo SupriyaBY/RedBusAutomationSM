@@ -14,60 +14,60 @@ public class TrainTicketPageTest extends Base {
 		hmPage.navigateTottPage();
 	}
 
-//	@Test(priority = 1)
-//	public void ttPageTitleTest() {
-//		String actTitle = ttPage.getTrainTicketPageTitle();
-//		Assert.assertEquals(actTitle, AppConstants.TRAINTICKECT_PAGE_TITLE_VALUE);
-//	}
-
 	@Test(priority = 1)
+	public void ttPageTitleTest() {
+		String actTitle = ttPage.getTrainTicketPageTitle();
+		Assert.assertEquals(actTitle, AppConstants.TRAINTICKECT_PAGE_TITLE_VALUE);
+	}
+
+	@Test(priority = 2)
 	public void ttPageLogoTest() {
 		Assert.assertTrue(ttPage.isLogoExist());
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 3)
 	public void HomeTest() {
 		Assert.assertTrue(ttPage.isHomedisplay());
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void irctcLogoTest() {
 		Assert.assertTrue(ttPage.isirctcLogoExist());
 
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void BookTrainBtnTest() {
 		Assert.assertTrue(ttPage.isBookttRadiodisplay());
 
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 6)
 	public void PNRTest() {
 		Assert.assertTrue(ttPage.isPNRdisplay());
 
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void ttPagefromTextBoxTest() {
 		Assert.assertTrue(ttPage.isfromtextboxdisplay());
 
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void ttPageToTextBoxTest() {
 		Assert.assertTrue(ttPage.istotextboxdisplay());
 
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void calenderTest() {
 		Assert.assertTrue(ttPage.iscalenderdisplay());
 
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 10)
 	public void checkSearchIsDisplayed() {
 		ttPage = ttPage.ttPageSearchBtnTest();
 		// Assert.assertTrue(srcPage.clickSearchButton());
