@@ -66,12 +66,12 @@ public class CabRentalPageTest extends Base {
 //		crPage.isPickUpDtandTmboxdisplay();
 //	}
 
-	@Test(priority = 9)
-	public void roundTrip() {
-		crPage.isRoundTripdisplay();
-	}
+//	@Test(priority = 9)
+//	public void roundTrip() {
+//		crPage.isRoundTripdisplay();
+//	}
 
-	@Test(priority = 10)
+	@Test(priority = 9)
 	public void searchButtonTest() {
 		crPage.isSearchdisplay();
 

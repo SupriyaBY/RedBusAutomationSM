@@ -112,9 +112,9 @@ public class CabRentalPage {
 //		return eleUtil.checkElementIsDisplayed(pickUpDtandTm);
 	//}
 
-	public boolean isRoundTripdisplay() {
-		return eleUtil.checkElementIsDisplayed(roundTrip);
-	}
+//	public boolean isRoundTripdisplay() {
+//		return eleUtil.checkElementIsDisplayed(roundTrip);
+//	}
 
 	public boolean isSearchdisplay() {
 		return eleUtil.checkElementIsDisplayed(searchButton);
