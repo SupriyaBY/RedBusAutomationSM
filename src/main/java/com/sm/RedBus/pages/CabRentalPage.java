@@ -54,10 +54,10 @@ public class CabRentalPage {
 //		eleUtil.checkElementClickable(contactus, AppConstants.MEDIUM_DEFAULT_WAIT);
 	// }
 
-	public void getCabRentalPage() {
-		String actTitle = driver.getTitle();
-		 eleUtil.waitForTitleIsAndCapture(AppConstants.CAB_RENTAL_URL_PAGE, AppConstants.SHORT_DEFAULT_WAIT);
-	}
+//	public void getCabRentalPage() {
+//		String actTitle = driver.getTitle();
+//		 eleUtil.waitForTitleIsAndCapture(AppConstants.CAB_RENTAL_URL_PAGE, AppConstants.SHORT_DEFAULT_WAIT);
+//	}
 
 	public void isRideclickable() {
 		eleUtil.checkElementClickable(ryde, AppConstants.SHORT_DEFAULT_WAIT);

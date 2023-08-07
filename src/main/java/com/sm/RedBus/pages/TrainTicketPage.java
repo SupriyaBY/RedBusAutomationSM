@@ -36,10 +36,10 @@ public class TrainTicketPage {
 	private By irctcTitle = By.xpath("//*[@id=\\\"root\\\"]/section[1]/div[2]/div[1]/div[2]/span[1]");
 	private By irctcLogo = By.xpath("//img[@alt='irctc logo']");
 
-	public String getTrainTicketPageTitle() {
-		return eleUtil.waitForTitleIsAndCapture(AppConstants.TRAINTICKECT_PAGE_TITLE_VALUE,
-				AppConstants.MEDIUM_DEFAULT_WAIT);
-	}
+//	public String getTrainTicketPageTitle() {
+//		return eleUtil.waitForTitleIsAndCapture(AppConstants.TRAINTICKECT_PAGE_TITLE_VALUE,
+//				AppConstants.MEDIUM_DEFAULT_WAIT);
+//	}
 
 	public boolean isHomedisplay() {
 		return eleUtil.checkElementIsDisplayed(headerHome);
