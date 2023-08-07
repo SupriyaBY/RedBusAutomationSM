@@ -62,6 +62,12 @@ public class ElementUtil {
 		return element;
 	}
 
+	// added
+	public void doSelect(By locator) {
+		getElement(locator).click();
+		getElement(locator).isSelected();
+	}
+
 	public WebElement getElement(By locator) {
 		WebElement element = null;
 		try {
@@ -76,6 +82,20 @@ public class ElementUtil {
 			jsUtil.flash(element);
 		}
 		return element;
+	}
+
+	public boolean checkvisibleandclickable(By locator) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(DEFAULT_TIME_OUT));
+			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+			if (Boolean.parseBoolean(DriverFactory.highlightElement)) {
+				jsUtil.flash(element);
+			}
+			return element.isDisplayed();
+		} catch (Exception e) {
+			return false;
+		}
+
 	}
 
 	public void doClear(By locator) {

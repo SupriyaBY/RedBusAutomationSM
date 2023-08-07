@@ -8,16 +8,18 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 import com.sm.RedBus.factory.DriverFactory;
+import com.sm.RedBus.pages.CabRentalPage;
 import com.sm.RedBus.pages.HomePage;
-import com.sm.RedBus.pages.LoginPage;
-
-
+import com.sm.RedBus.pages.HomePageFooter2;
+import com.sm.RedBus.pages.TrainTicketPage;
 
 public class Base {
 
-	protected LoginPage loginPage;
 	protected HomePage hmPage;
-	
+	protected HomePageFooter2 ft2Page;
+	protected TrainTicketPage ttPage;
+	protected CabRentalPage crPage;
+
 	WebDriver driver;
 	protected DriverFactory df;
 	protected Properties prop;
@@ -35,7 +37,9 @@ public class Base {
 		driver = df.initDriver(prop);
 
 		hmPage = new HomePage(driver);
-		//loginPage = new LoginPage(driver);
+		ttPage = new TrainTicketPage(driver);
+		crPage = new CabRentalPage(driver);
+		// loginPage = new LoginPage(driver);
 		softAssert = new SoftAssert();
 	}
 

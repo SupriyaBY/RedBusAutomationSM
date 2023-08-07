@@ -7,11 +7,40 @@
 		<listener class-name="com.sm.RedBus.listeners.AllureReportListner" />
 		<listener class-name="com.sm.RedBus.listeners.AnnotationTransformer" />
 	</listeners>
+
 	<test name="HomePage Test ">
 		<parameter name="browser" value="chrome" />
 		<parameter name="browserversion" value="115.0" />
 		<classes>
 			<class name="com.sm.RedBus.tests.HomePageTest" />
+		</classes>
+	</test>
+	<!--<test name="SearchPage Test ">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="115.0" />
+		<classes>
+			<class name="com.sm.RedBus.tests.SearchTest" />
+		</classes>
+	</test>-->
+	<test name="TrainTickect page Test ">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="115.0" />
+		<classes>
+			<class name="com.sm.RedBus.tests.TrainTickectPageTest" />
+		</classes>
+	</test>
+	<test name="CabRentalPageTest ">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="114.0" />
+		<classes>
+			<class name="com.sm.RedBus.tests.CabRentalPageTest" />
+		</classes>
+	</test>
+	<test name="HomePageFooter2 Test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="115.0" />
+		<classes>
+			<class name="com.sm.RedBus.tests.HomePageFooter2Test" />
 		</classes>
 	</test>
 </suite> <!-- Sanity -->
