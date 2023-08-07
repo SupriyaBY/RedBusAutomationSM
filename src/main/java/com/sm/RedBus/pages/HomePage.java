@@ -197,7 +197,7 @@ public class HomePage {
 
 	public TrainTicketPage navigateTottPage() {
 		eleUtil.doClick(traintkt);
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		System.out.println(driver.getTitle());
 		return new TrainTicketPage(driver);
 

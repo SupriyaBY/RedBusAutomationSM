@@ -38,7 +38,7 @@ public class TrainTicketPage {
 
 	public String getTrainTicketPageTitle() {
 		return eleUtil.waitForTitleIsAndCapture(AppConstants.TRAINTICKECT_PAGE_TITLE_VALUE,
-				AppConstants.SHORT_DEFAULT_WAIT);
+				AppConstants.MEDIUM_DEFAULT_WAIT);
 	}
 
 	public boolean isHomedisplay() {
