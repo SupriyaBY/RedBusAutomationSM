@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.sm.RedBus.base.Base;
 import com.sm.RedBus.utils.AppConstants;
 
-public class TrainTickectPageTest extends Base {
+public class TrainTicketPageTest extends Base {
 
 	@BeforeTest
 	public void TrainTicketPageSetup() {

@@ -24,7 +24,6 @@ public class CabRentalPage {
 
 //By Locaters
 
-	 
 	private By logo = By.xpath(" //html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/img[1]");
 	private By ryde = By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]");
 	private By managebooking = By.xpath(" //div[contains(text(),'Manage Booking')]");
@@ -38,21 +37,14 @@ public class CabRentalPage {
 	private By switchicon = By.xpath(
 			"//body/div[@id='reactContentMount']/div[1]/div[4]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[1]/img[1]");
 	private By destination = By.xpath("//input[@id='destination']");
-	//private By pickUpDtandTm = By.xpath(
-			//"/html[1]/body[1]/div[2]/div[1]/div[4]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/input[1]");
 	private By roundTrip = By.xpath(
 			"xpath-/html[1]/body[1]/div[2]/div[1]/div[4]/div[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[6]/label[1]/span[2]");
 	private By searchButton = By.xpath("//div[contains(text(),'SEARCH')]");
 
-	// *[@id="reactContentMount"]/div/div[4]/div/div/div[3]/div[1]/div[3]
 	// page actions
 	public boolean isLogoExist() {
 		return eleUtil.checkElementIsDisplayed(logo);
 	}
-//	public void iscontactusclickable() {
-//		eleUtil.checkElementIsDisplayed(contactus);
-//		eleUtil.checkElementClickable(contactus, AppConstants.MEDIUM_DEFAULT_WAIT);
-	// }
 
 	public String getCabRentalPage() {
 		return eleUtil.waitForTitleIsAndCapture(AppConstants.CAB_RENTAL_URL_PAGE, AppConstants.SHORT_DEFAULT_WAIT);
@@ -67,10 +59,6 @@ public class CabRentalPage {
 		eleUtil.checkElementClickable(managebooking, AppConstants.SHORT_DEFAULT_WAIT);
 	}
 
-//	public void ismanageBookingiconClickable() {
-//		eleUtil.checkElementIsDisplayed(managebookicon);
-//		eleUtil.checkElementClickable(managebookicon, AppConstants.SHORT_DEFAULT_WAIT);
-//	}
 	public boolean isProfileClickable() {
 		return eleUtil.checkElementIsDisplayed(profile);
 	}
@@ -97,14 +85,10 @@ public class CabRentalPage {
 	}
 
 	public boolean isDestinationboxdisplay() {
-		driver.findElement(destination).sendKeys("Pune Airport Departure, New Airport Road, Pune International Airport Area, Sanjay Park, Pune, Maharashtra, India");
+		driver.findElement(destination).sendKeys(
+				"Pune Airport Departure, New Airport Road, Pune International Airport Area, Sanjay Park, Pune, Maharashtra, India");
 		return eleUtil.checkElementIsDisplayed(destination);
 	}
-
-//	public boolean isPickUpDtandTmboxdisplay() {
-//	//	driver.findElement(pickUpDtandTm).sendKeys("Thu 10 Aug, 02:52 AM");
-//		return eleUtil.checkElementIsDisplayed(pickUpDtandTm);
-	//}
 
 	public boolean isRoundTripdisplay() {
 		return eleUtil.checkElementIsDisplayed(roundTrip);
@@ -115,5 +99,3 @@ public class CabRentalPage {
 	}
 
 }
-
-

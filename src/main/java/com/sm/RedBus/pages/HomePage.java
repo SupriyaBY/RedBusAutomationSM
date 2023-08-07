@@ -55,12 +55,6 @@ public class HomePage {
 	private By tempo_mum = By.cssSelector("#tempo_traveller_seo_mum");
 	private By tempo_ahm = By.cssSelector("#tempo_traveller_seo_ahm");
 
-	// private footer = By.cssSelector(".rb_footer");
-
-	private String searchPageUrl = "\"https://www.redbus.in/bus-tickets/kolhapur-maharashtra-to-pune?fromCityName=Kolhapur(Maharashtra)&fromCityId=76079&srcCountry=IND&toCityName=Pune&toCityId=130&destCountry=IND&onward=10-Aug-2023&opId=0&busType=Any\"";
-	private By searchPage = By.linkText(
-			"https://www.redbus.in/bus-tickets/kolhapur-maharashtra-to-pune?fromCityName=Kolhapur(Maharashtra)&fromCityId=76079&srcCountry=IND&toCityName=Pune&toCityId=130&destCountry=IND&onward=10-Aug-2023&opId=0&busType=Any");
-
 	// 3. page actions:
 	public String getHomePageTitle() {
 		return eleUtil.waitForTitleIsAndCapture(AppConstants.HOME_PAGE_TITLE_VALUE, AppConstants.SHORT_DEFAULT_WAIT);
@@ -118,14 +112,11 @@ public class HomePage {
 	}
 
 	public void isTopRTCsdisplay() {
-
 		eleUtil.IsElementDisplayed(toprtc);
 	}
 
 	public void isAsprtcClickable() {
-
 		eleUtil.checkElementClickable(apsrt, AppConstants.SHORT_DEFAULT_WAIT);
-
 	}
 
 	public void isMsrtcClickable() {
@@ -169,13 +160,8 @@ public class HomePage {
 	}
 
 	public WebElement isaboutusclickable() {
-		// private jsu = new JavaScriptUtil();
-
 		eleUtil.checkElementIsDisplayed(aboutus);
 		return eleUtil.checkElementClickable(aboutus, AppConstants.MEDIUM_DEFAULT_WAIT);
-		// driver.navigate().to("https://www.redbus.in/");
-		// driver.switchTo().window(getHomePageTitle());
-
 	}
 
 	public void iscontactusclickable() {
@@ -183,10 +169,6 @@ public class HomePage {
 		eleUtil.checkElementClickable(contactus, AppConstants.MEDIUM_DEFAULT_WAIT);
 	}
 
-//	public void istermconditionsclickable() {
-//		eleUtil.checkElementIsDisplayed(terms_conditions);
-//	   eleUtil.checkElementClickable(terms_conditions, AppConstants.SHORT_DEFAULT_WAIT);
-//	}
 	// change
 	public boolean istermconditionsdisplayclickable() {
 		return eleUtil.checkvisibleandclickable(terms_conditions);
@@ -212,7 +194,7 @@ public class HomePage {
 		eleUtil.checkElementIsDisplayed(aboutus);
 		return new HomePageFooter2(driver);
 	}
-	
+
 	public TrainTicketPage navigateTottPage() {
 		eleUtil.doClick(traintkt);
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
@@ -220,13 +202,13 @@ public class HomePage {
 		return new TrainTicketPage(driver);
 
 	}
-	
+
 	public CabRentalPage navigateToCabPage() {
 		eleUtil.doClick(cabrental);
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		System.out.println(driver.getTitle());
 		return new CabRentalPage(driver);
 
-}
+	}
 
 }
