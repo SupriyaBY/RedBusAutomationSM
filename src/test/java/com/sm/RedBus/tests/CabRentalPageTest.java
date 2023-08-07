@@ -17,7 +17,7 @@ public class CabRentalPageTest extends Base {
 	@Test(priority = 1)
 	public void crPageTitleTest() {
 
-		String actTitle = crPage.getCabRentalPage();
+		String actTitle = crPage.getCabRentalPageTitle();
 		Assert.assertEquals(actTitle, AppConstants.CAB_RENTAL_URL_PAGE);
 	}
 
