@@ -29,14 +29,20 @@
 			<class name="com.sm.RedBus.tests.TrainTicketPageTest" />
 		</classes>
 	</test>
+
  	<test name="CabRentalPageTest ">
+
 		<parameter name="browser" value="chrome" />
 		<parameter name="browserversion" value="117.0" />
 		<classes>
 			<class name="com.sm.RedBus.tests.CabRentalPageTest" />
 		</classes>
 	</test>
+
+
+
 	 <test name="RedBusFooter2 Test">
+
 		<parameter name="browser" value="chrome" />
 		<parameter name="browserversion" value="115.0" />
 		<classes>
