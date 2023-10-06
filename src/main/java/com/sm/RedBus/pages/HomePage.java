@@ -207,15 +207,15 @@ public class HomePage {
 		eleUtil.checkElementClickable(colombia_site, AppConstants.SHORT_DEFAULT_WAIT);
 
 	}
-
-	public HomePageFooter2 footerSetUp() {
+	
+	public RedBusFooter2 footerListSetUp() {
 		eleUtil.checkElementIsDisplayed(aboutus);
-		return new HomePageFooter2(driver);
+		return new RedBusFooter2(driver);
 	}
 	
 	public TrainTicketPage navigateTottPage() {
 		eleUtil.doClick(traintkt);
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		System.out.println(driver.getTitle());
 		return new TrainTicketPage(driver);
 

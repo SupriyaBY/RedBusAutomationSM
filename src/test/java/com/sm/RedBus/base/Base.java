@@ -10,13 +10,13 @@ import org.testng.asserts.SoftAssert;
 import com.sm.RedBus.factory.DriverFactory;
 import com.sm.RedBus.pages.CabRentalPage;
 import com.sm.RedBus.pages.HomePage;
-import com.sm.RedBus.pages.HomePageFooter2;
+import com.sm.RedBus.pages.RedBusFooter2;
 import com.sm.RedBus.pages.TrainTicketPage;
 
 public class Base {
 
 	protected HomePage hmPage;
-	protected HomePageFooter2 ft2Page;
+	protected RedBusFooter2 footert2Page;
 	protected TrainTicketPage ttPage;
 	protected CabRentalPage crPage;
 

@@ -17,7 +17,7 @@ public class CabRentalPageTest extends Base {
 	@Test(priority = 1)
 	public void crPageTitleTest() {
 
-		String actTitle = crPage.getCabRentalPage();
+		String actTitle = crPage.getCabRentalPageTitle();
 		Assert.assertEquals(actTitle, AppConstants.CAB_RENTAL_URL_PAGE);
 	}
 
@@ -66,12 +66,12 @@ public class CabRentalPageTest extends Base {
 //		crPage.isPickUpDtandTmboxdisplay();
 //	}
 
-	@Test(priority = 11)
+	@Test(priority = 10)
 	public void roundTrip() {
 		crPage.isRoundTripdisplay();
 	}
 
-	@Test(priority = 12)
+	@Test(priority = 11)
 	public void searchButtonTest() {
 		crPage.isSearchdisplay();
 
