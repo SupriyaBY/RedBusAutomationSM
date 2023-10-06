@@ -468,6 +468,11 @@ public class ElementUtil {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut), Duration.ofSeconds(intervalTime));
 		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 	}
+	
+	public List<WebElement> waitForElementsVisible(List<WebElement> list, int timeOut) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
+		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy((By) list));
+	}
 
 	/**
 	 * An expectation for checking that there is at least one element present on a
