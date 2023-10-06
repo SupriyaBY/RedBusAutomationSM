@@ -10,7 +10,7 @@
 
 	<test name="HomePage Test ">
 		<parameter name="browser" value="chrome" />
-		<parameter name="browserversion" value="115.0" />
+		<parameter name="browserversion" value="117.0" />
 		<classes>
 			<class name="com.sm.RedBus.tests.HomePageTest" />
 		</classes>
@@ -24,23 +24,29 @@
 	</test>-->
 	 <test name="TrainTickect page Test ">
 		<parameter name="browser" value="chrome" />
-		<parameter name="browserversion" value="115.0" />
+		<parameter name="browserversion" value="117.0" />
 		<classes>
 			<class name="com.sm.RedBus.tests.TrainTicketPageTest" />
 		</classes>
 	</test>
-	<test name="CabRentalPageTest ">
+
+ 	<test name="CabRentalPageTest ">
+
 		<parameter name="browser" value="chrome" />
-		<parameter name="browserversion" value="114.0" />
+		<parameter name="browserversion" value="117.0" />
 		<classes>
 			<class name="com.sm.RedBus.tests.CabRentalPageTest" />
 		</classes>
 	</test>
-	<test name="HomePageFooter2 Test">
+
+
+
+	 <test name="RedBusFooter2 Test">
+
 		<parameter name="browser" value="chrome" />
 		<parameter name="browserversion" value="115.0" />
 		<classes>
-			<class name="com.sm.RedBus.tests.HomePageFooter2Test" />
+			<class name="com.sm.RedBus.tests.RedBusFooter2Test" />
 		</classes>
 	</test> 
 </suite> <!-- Sanity -->
